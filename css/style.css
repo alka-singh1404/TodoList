@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: #fff;
+    width: 350px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #667eea;
+}
+
+.input-section button {
+    padding: 10px 15px;
+    border: none;
+    background: #667eea;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.input-section button:hover {
+    background: #5a67d8;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    background: #f7f7f7;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+}
+
+li:hover {
+    transform: scale(1.02);
+    background: #eef1ff;
+}
+
+li span {
+    flex: 1;
+}
+
+li button {
+    border: none;
+    padding: 6px 10px;
+    margin-left: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+/* Edit Button */
+li button:nth-child(2) {
+    background: #f6ad55;
+    color: white;
+}
+
+/* Delete Button */
+li button:nth-child(3) {
+    background: #e53e3e;
+    color: white;
+}
+
+li button:hover {
+    opacity: 0.8;
+}
